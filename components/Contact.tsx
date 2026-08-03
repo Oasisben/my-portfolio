@@ -4,7 +4,6 @@ import { useState } from "react";
 import { IconMail, IconBrandLinkedin, IconBrandGithub, IconBrandWhatsapp } from "@tabler/icons-react";
 import FadeIn from "./FadeIn";
 import { PERSONAL } from "@/lib/data";
-import { label } from "framer-motion/client";
 
 const SOCIAL_LINKS = [
   { icon: <IconMail size={16} />, label: PERSONAL.email, href: `mailto:${PERSONAL.email}` },
@@ -42,7 +41,7 @@ function ContactForm() {
       alert("Something went wrong. Try again.");
     }
   }
-  
+
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       {(
